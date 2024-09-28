@@ -1,5 +1,5 @@
 ---
-title: Caught in the Easter Trap: SAZKA SMShing Attack
+title: "Caught in the Easter Trap: SAZKA SMShing Attack"
 date: 2024-09-28 13:21:00 +0200
 categories: [Cybersecurity, Phishing]
 tags: [smshing, phishing, sazka, cybersecurity, fraud]  # TAG names should always be lowercase
