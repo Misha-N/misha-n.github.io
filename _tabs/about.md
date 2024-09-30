@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# Hello everyone!
+# 👋 Hello everyone!
 
 My name is Michal Frýba, and I'm thrilled to welcome you to my blog. I'll be sharing my passion for **cyber security** and all things related to it. I'll be covering some interesting news in the industry, providing manuals, and introducing various tools. I would also like to focus on topics from **incident response**, **threat hunting**, and **pentesting**. Whether you're an expert in the field or just starting out, I hope you'll find valuable information and insights here.
 
