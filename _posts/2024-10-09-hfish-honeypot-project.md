@@ -14,7 +14,7 @@ So let’s dive into the numbers and see what was detected!
 
 ## The Honeypot Lineup 🎯
 
-To maximize the chances of catching attackers in the act, I set up honeypot platform (HFish)[https://github.com/hacklcx/HFish] with **20 honeypots** simulating commonly targeted services, such as:
+To maximize the chances of catching attackers in the act, I set up honeypot platform [HFish](https://github.com/hacklcx/HFish) with **20 honeypots** simulating commonly targeted services, such as:
 
 - **High Interaction SSH**, **Telnet**, and **MySQL** Honeypots
 - Standard **SSH**, **MySQL**, **Redis**, **FTP**, and more
