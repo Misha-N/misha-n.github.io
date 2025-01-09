@@ -33,7 +33,7 @@ Here's a brief overview of the top 5 most-discussed vulnerabilities by total sub
 | **CVE-2020-1472** | 117                   | Vulnerability that allows unauthenticated attackers to gain domain administrator access via a vulnerable Netlogon secure channel connection.                      |
 | **CVE-2021-3156** | 115                   | A vulnerability in Unix Sudo feature that allows privilege escalation to root through a buffer overflow.                           |
 
-When we shift our focus to the number of **reactions in the form of comments**, the ranking changes slightly. The vulnerability that generates the most engagement in comments is already mentioned **CVE-2020-2021** (PAN-OD authentication bypass), with a total of **3008 comments**. This suggests that while **CVE-2021-44228** (Log4Shell) had more submissions overall (by just one), **CVE-2020-2021** sparked deeper discussions among users.
+When we shift our focus to the number of **reactions in the form of comments**, the ranking changes slightly. The vulnerability that generates the most engagement in comments is already mentioned **CVE-2020-2021** (PAN-OS authentication bypass), with a total of **3008 comments**. This suggests that while **CVE-2021-44228** (Log4Shell) had more submissions overall (by just one), **CVE-2020-2021** sparked deeper discussions among users.
 
 Here’s how the list of top vulnerabilities looks when considering the total number of comments:
 
