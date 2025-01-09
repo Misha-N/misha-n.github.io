@@ -67,8 +67,7 @@ For vulnerabilities that had at least 20 posts, the vulnerabilities with the mos
 |-------------------|------------------------|---------------------------|---------------------------|-----------------------------------------------------------------------------------------------|
 | **CVE-2013-3900**  | 0.33                   | 0.26                      | 0.30                      | A vulnerability in the WinVerifyTrust function that allows attackers to execute remote code by modifying signed executable files without invalidating the signature.           |
 | **CVE-2021-36934** | 0.16                   | 0.29                      | 0.22                      | A vulnerability in overly permissive Access Control Lists (ACLs) on system files that allows attackers to execute code with SYSTEM privileges.      |
-| **CVE-2019-1367**  | 0.26                   | 0.05                      | 0.15                      | 
-A vulnerability in the Internet Explorer scripting engine that allows remote code execution by exploiting memory corruption when handling objects in memory. |
+| **CVE-2019-1367**  | 0.26                   | 0.05                      | 0.15                      | A vulnerability in the Internet Explorer scripting engine that allows remote code execution by exploiting memory corruption when handling objects in memory. |
 
 #### Most Negative Sentiment:
 
