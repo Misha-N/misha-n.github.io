@@ -83,4 +83,7 @@ These sentiment scores provide a deeper understanding of how the community react
 
 While these findings are interesting, it’s worth mentioning the limitations. VADER, even with a fine-tuned lexicon, doesn’t perfectly capture the nuances of cybersecurity language or the community’s unique humor. Nonetheless, it provides a solid foundation for understanding how vulnerabilities are perceived and discussed. Additionally, only the first level of comments was analyzed, which may not fully capture the depth of community discussions. Expanding to additional data sources would provide a more comprehensive view, but as a starting point, Reddit offers a solid and insightful foundation.
 
-For those interested, I’ve published the full statistics, including detailed sentiment scores and post analysis, at [this page](https://961203.xyz/stats/cve@reddit.html).I plan to update this dataset weekly, so stay tuned for fresh insights.
+For those interested, I’ve published the full statistics, including detailed sentiment scores and post analysis, at [this page](https://961203.xyz/stats/cve@reddit.html). I plan to update this dataset weekly, so stay tuned for fresh insights.
+
+![Analysis data page](/assets/img/sentiment/sentiment.png){: w="700" h="400" }
+_Webpage with full dataset_
