@@ -21,7 +21,7 @@ For data mining, I used [aPRAW](https://apraw.readthedocs.io/en/latest/), a Pyth
 
 ### Results and Insights: The Most Discussed Vulnerabilities
 
-When we look at the number of submissions across Reddit, the vulnerability with the most mentions was **CVE-2021-44228**, which appeared in **234 posts**. This vulnerability is better known as **Log4Shell** and it made headlines worldwide for its remote code execution (RCE) flaw in the widely-used Log4j logging library, which affected millions of devices.
+When we look at the number of submissions across Reddit, the vulnerability with the most mentions was one and only **CVE-2021-44228**, which appeared in **234 posts**. This vulnerability is better known as **Log4Shell** and it made headlines worldwide for its remote code execution (RCE) flaw in the widely-used Log4j logging library, which affected millions of devices.
 
 Here's a brief overview of the top 5 most-discussed vulnerabilities by total submissions:
 
