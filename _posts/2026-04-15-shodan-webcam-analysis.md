@@ -9,7 +9,7 @@ image:
   alt: Visualization of publicly accessible cameras and global privacy exposure with AI analysis overlay.
 ---
 
-> The materials presented in this article are derived from publicly accessible sources on the internet, including data indexed by services such as Shodan. No authentication bypassing, exploitation, or unauthorized access techniques were used to obtain this information.
+> The materials presented in this article are derived from publicly accessible data indexed by services Shodan. No authentication bypassing, exploitation, or unauthorized access techniques were used to obtain this information.
 >
 > All images have been anonymized to remove or obscure any potentially identifiable personal data, in accordance with applicable data protection regulations, including the General Data Protection Regulation (GDPR). The content does not aim to identify any individual, household, or organization.
 >
