@@ -9,6 +9,14 @@ image:
   alt: Visualization of publicly accessible cameras and global privacy exposure with AI analysis overlay.
 ---
 
+> The materials presented in this article are derived from publicly accessible sources on the internet, including data indexed by services such as Shodan. No authentication bypassing, exploitation, or unauthorized access techniques were used to obtain this information.
+>
+> All images have been anonymized to remove or obscure any potentially identifiable personal data, in accordance with applicable data protection regulations, including the General Data Protection Regulation (GDPR). The content does not aim to identify any individual, household, or organization.
+>
+> This article is intended solely for informational, educational, and cybersecurity awareness purposes. The author does not endorse or encourage unauthorized access to systems.
+>
+> If any individual or entity believes their rights or privacy have been affected, they are encouraged to make contact for immediate review and possible removal of the relevant content.
+{: .prompt-warning }
 
 # Live from the Bedroom: When We Stream Our Private Lives Online
 Webcams are widely used for everyday purposes such as monitoring homes, checking on pets, supervising workplaces, or observing public spaces. Most of these use cases are completely legitimate. However, not all devices are configured securely, and some end up being publicly accessible without the owner's awareness.
