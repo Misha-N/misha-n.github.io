@@ -6,7 +6,6 @@ tags: [iot, cameras, shodan, privacy, osint, cybersecurity, data analysis]  # TA
 description: A large-scale analysis of publicly accessible internet-connected cameras using AI and network metadata, uncovering privacy risks, global exposure patterns, and real-world implications of misconfigured IoT devices.
 image:
   path: /assets/img/webcams/banner.png
-  alt: Visualization of publicly accessible cameras and global privacy exposure with AI analysis overlay.
 ---
 
 > The materials presented in this article are derived from publicly accessible data indexed by services Shodan. No authentication bypassing, exploitation, or unauthorized access techniques were used to obtain this information.
