@@ -48,7 +48,7 @@ A bot token carries every permission the bot has. Anyone holding it can do this:
 | Rename the bot or rewrite its profile | no |
 | Ban members and delete messages in groups where the bot is admin | no |
 
-Hijackers use the last four. Section 7 shows how.
+Hijackers use the bottom half of the table: section 7 shows bots redirected to their servers and rewritten to advertise their own scams.
 
 For this research a harvester was built. It reads the certificate-transparency stream, the public log of every new TLS certificate (more than **70 million** since that feed was added on 24 October), picks out lookalike domains, crawls the pages, unpacks the kits and pulls out the tokens. Then it does only what a token allows without changing anything: it asks the bot who it is, where it sends data, who is on the other end, and what is being said in the groups and channels where it sits. A bot receives the messages in those chats as "updates" and keeps them queued for up to 24 hours, and the same token can read that queue. Bots that forward everything to their own server through a webhook can't be read this way; for them only the server address and the accounts behind the bot are visible.
 
