@@ -35,22 +35,22 @@ Much of today's phishing runs on *kits*: ZIP archives that clone a bank, a mailb
 
 To do that, the kit has to contain the bot's token, either in its PHP code or in JavaScript running in the victim's browser. A Telegram bot token works like a password and a username in one string: whoever holds it can talk to the Telegram API as that bot. Kits leak all the time, through open directories, forgotten ZIP files and tokens pasted straight into client-side JavaScript.
 
-A bot token carries every permission the bot has, and the bots differ in what they can do:
+Of the 708 tokens, 565 still worked when checked. A working token carries every permission its bot has:
 
-| Permission | What it would have allowed | Used |
+| Permission | What it allows | Tokens |
 |---|---|---|
-| Bot profile and webhook info | see where victim data goes | yes |
-| Messages waiting for the bot (24 h) | read victims' data and the crew's chat | read only |
-| Chat, admin and member lookup | identify operators and their groups | yes |
-| File download | get kits, photos and documents sent to the bot | yes |
-| Privacy mode off (5 bots) | read every message in any group the bot joins | read only |
-| Send, edit and delete as the bot | warn victims, send operators a tracking link | no |
-| Set a webhook | cut operators off from their victims' data | no |
-| Edit the bot's name and profile | label the bot as a scam | no |
-| Admin in the crew's own chat (19 bots) | delete history, ban members, post warnings | no |
-| Telegram Business (4 bots) | read and answer a connected business account's private chats | no |
+| Bot profile and webhook info | see where victim data goes | all 565 |
+| Messages waiting for the bot (24 h) | read victims' data and the crew's chat | all without a webhook |
+| Chat, admin and member lookup | identify operators and their groups | all 565 |
+| File download | get kits, photos and documents sent to the bot | all 565 |
+| Send, edit and delete as the bot | message victims and operators | all 565 |
+| Set a webhook | redirect all incoming data and cut the operator off | all 565 |
+| Edit the bot's name and profile | rewrite what the bot claims to be | all 565 |
+| Privacy mode off | read every message in any group the bot joins | 5 |
+| Admin in the crew's own chat | delete history, ban members, post warnings | 17 (in 19 chats) |
+| Telegram Business | read and answer a connected business account's private chats | 4 |
 
-Hijackers use several of the unused ones; section 7 shows how.
+Hijackers use several of these; section 7 shows how.
 
 For this research a harvester was built. It reads the certificate-transparency stream, the public log of every new TLS certificate (more than **70 million** since that feed was added on 24 October), picks out lookalike domains, crawls the pages, unpacks the kits and pulls out the tokens. Then it does only what a token allows without changing anything: it asks the bot who it is, where it sends data, who is on the other end, and what is being said in the groups and channels where it sits. A bot receives the messages in those chats as "updates" and keeps them queued for up to 24 hours, and the same token can read that queue. Bots that forward everything to their own server through a webhook can't be read this way; for them only the server address and the accounts behind the bot are visible.
 
