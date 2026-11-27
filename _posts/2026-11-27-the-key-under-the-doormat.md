@@ -50,6 +50,12 @@ A bot token carries every permission the bot has. Anyone holding it can do this:
 
 Hijackers use three of these: section 7 shows bots redirected to their servers, with rewritten profiles, messaging their own scams to anyone who opens them.
 
+What a token is worth depends on the bot behind it:
+
+- **19 bots** are admins of their crew's own group or channel, the drainer's channel and the Fondeadora channel among them. An admin bot receives every message posted there.
+- **5 bots** have privacy mode switched off, so they read every message in any group they join, not just commands.
+- **4 bots** are enabled for Telegram Business. Connected to a business account, such a bot can read and answer that account's private chats on the owner's behalf. No such connection showed up in the data.
+
 For this research a harvester was built. It reads the certificate-transparency stream, the public log of every new TLS certificate (more than **70 million** since that feed was added on 24 October), picks out lookalike domains, crawls the pages, unpacks the kits and pulls out the tokens. Then it does only what a token allows without changing anything: it asks the bot who it is, where it sends data, who is on the other end, and what is being said in the groups and channels where it sits. A bot receives the messages in those chats as "updates" and keeps them queued for up to 24 hours, and the same token can read that queue. Bots that forward everything to their own server through a webhook can't be read this way; for them only the server address and the accounts behind the bot are visible.
 
 ![The pipeline in numbers](/assets/img/doormat/01_funnel.png)
