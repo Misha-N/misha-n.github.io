@@ -31,7 +31,7 @@ All of this was visible in the criminals' own chat, because the people who built
 
 ## 1. How a phishing kit hands over the key
 
-Most phishing today runs on *kits*: ZIP archives that clone a bank, a mailbox or a crypto wallet, sold to operators who upload them to cheap hosting and spam the link. When a victim types something in, the kit forwards it to the operator's phone through a Telegram bot within seconds.
+Much of today's phishing runs on *kits*: ZIP archives that clone a bank, a mailbox or a crypto wallet, sold to operators who upload them to cheap hosting and spam the link. When a victim types something in, many kits forward it to the operator's phone through a Telegram bot within seconds.
 
 To do that, the kit has to contain the bot's token, either in its PHP code or in JavaScript running in the victim's browser. A Telegram bot token works like a password and a username in one string: whoever holds it can talk to the Telegram API as that bot. Kits leak all the time, through open directories, forgotten ZIP files and tokens pasted straight into client-side JavaScript.
 
