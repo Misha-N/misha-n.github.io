@@ -50,9 +50,9 @@ Of the 708 tokens, 565 still worked when checked. A working token carries every 
 | Admin in the crew's own chat | delete history, ban members, post warnings | 17 (in 19 chats) |
 | Telegram Business | read and answer a connected business account's private chats | 4 |
 
-Hijackers use several of these; section 7 shows how.
+Hijackers use several of these, as section 7 shows.
 
-For this research a harvester was built. It reads the certificate-transparency stream, the public log of every new TLS certificate (more than **70 million** since that feed was added on 24 October), picks out lookalike domains, crawls the pages, unpacks the kits and pulls out the tokens. Then it does only what a token allows without changing anything: it asks the bot who it is, where it sends data, who is on the other end, and what is being said in the groups and channels where it sits. A bot receives the messages in those chats as "updates" and keeps them queued for up to 24 hours, and the same token can read that queue. Bots that forward everything to their own server through a webhook can't be read this way; for them only the server address and the accounts behind the bot are visible.
+For this research a harvester was built. It reads the certificate-transparency stream, the public log of every new TLS certificate (more than **70 million** since that feed was added on 24 October), picks out lookalike domains, crawls the pages, unpacks the kits and pulls out the tokens. Then it does only what a token allows without changing anything: it asks the bot who it is, where it sends data, who is on the other end, and what is being said in the groups and channels where it sits. A bot receives the messages in those chats as "updates" and keeps them queued for up to 24 hours, and the same token can read that queue. Bots that forward everything to their own server through a webhook can't be read this way. For them, only the server address and the accounts behind the bot are visible.
 
 ![The pipeline in numbers](/assets/img/doormat/01_funnel.png)
 
@@ -95,7 +95,7 @@ Crews mostly writing in Vietnamese run fake "Meta Verified" sites on Vercel and 
 
 ![A Meta business takeover log, fully masked](/assets/img/doormat/chat_meta_business.png)
 
-One operator posted a screenshot of their own desktop at exactly this moment. On the left is the victim's verified Facebook page with 75,000 followers; on the right is the bot's "PASSWORD RECOVERY FORM" for the same page, with the owner's name, two e-mail addresses and phone number. The victim had filled it in as an appeal against a supposed trademark complaint:
+One operator posted a screenshot of their own desktop at exactly this moment. On the left is the victim's verified Facebook page with 75,000 followers. On the right is the bot's "PASSWORD RECOVERY FORM" for the same page, with the owner's name, two e-mail addresses and phone number. The victim had filled it in as an appeal against a supposed trademark complaint:
 
 ![A takeover in progress: the victim's page next to the bot's log](/assets/img/doormat/case_takeover_live.jpg)
 *Page, logo, names, e-mails, phone and IP are masked. The operator's own chat list on the right is left as it was.*
@@ -137,7 +137,7 @@ Not every campaign is global. `@xX9MRkTs6a_bot` was built for one target: **Fond
 
 ![Fondeadora login logs, masked](/assets/img/doormat/chat_fondeadora.png)
 
-Between 3 and 17 November the bot delivered **100 logs**: 87 logins and 13 "INFO" records with further details, covering **42 different business accounts** from 54 IP addresses. These are submitted logins; the bot doesn't show which of them the crew then used. Almost all of it came in two bursts, 53 logs on 3 and 4 November and 46 on 17 November, which looks like two separate spam waves.
+Between 3 and 17 November the bot delivered **100 logs**: 87 logins and 13 "INFO" records with further details, covering **42 different business accounts** from 54 IP addresses. These are submitted logins, and the bot doesn't show which of them the crew then used. Almost all of it came in two bursts, 53 logs on 3 and 4 November and 46 on 17 November, which looks like two separate spam waves.
 
 The lures were spread over **17 lookalike domains**, so blocking one changed nothing: typos such as `app-empresariial-fondeadora.com` and `app-emprresarial-fondeadora.com`, the same name under `.info`, `.net`, `.online`, `.xyz` and `.vip`, and the subdomain trick `app-empresarial.fondeadora.br.com`, `.cn.com` and `.co.com`. The results went to a private channel with four members.
 
@@ -272,7 +272,7 @@ The criminals in this story are organised and fast, and they share their tools. 
 
 ## Appendix: Selected indicators
 
-*Tokens truncated; complete indicators are available to CERTs and abuse teams on request.*
+*Tokens are truncated. Complete indicators are available to CERTs and abuse teams on request.*
 
 | Type | Indicator | Context |
 |---|---|---|
