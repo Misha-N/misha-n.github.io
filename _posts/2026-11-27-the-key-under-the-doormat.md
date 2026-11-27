@@ -35,6 +35,21 @@ Much of today's phishing runs on *kits*: ZIP archives that clone a bank, a mailb
 
 To do that, the kit has to contain the bot's token, either in its PHP code or in JavaScript running in the victim's browser. A Telegram bot token works like a password and a username in one string: whoever holds it can talk to the Telegram API as that bot. Kits leak all the time, through open directories, forgotten ZIP files and tokens pasted straight into client-side JavaScript.
 
+A bot token carries every permission the bot has. Anyone holding it can do this:
+
+| With a leaked token you can | Used in this research |
+|---|---|
+| See the bot's name, settings and where it sends data | yes |
+| Read the messages waiting for the bot (kept for 24 hours) | yes, without marking them as read |
+| Look up the chats it sits in, their admins and member counts | yes |
+| Download files sent to the bot | yes |
+| Send, edit and delete messages as the bot | no |
+| Redirect all incoming data to another server (webhook) | no |
+| Rename the bot or rewrite its profile | no |
+| Ban members and delete messages in groups where the bot is admin | no |
+
+Hijackers use the last four. Section 7 shows how.
+
 For this research a harvester was built. It reads the certificate-transparency stream, the public log of every new TLS certificate (more than **70 million** since that feed was added on 24 October), picks out lookalike domains, crawls the pages, unpacks the kits and pulls out the tokens. Then it does only what a token allows without changing anything: it asks the bot who it is, where it sends data, who is on the other end, and what is being said in the groups and channels where it sits. A bot receives the messages in those chats as "updates" and keeps them queued for up to 24 hours, and the same token can read that queue. Bots that forward everything to their own server through a webhook can't be read this way; for them only the server address and the accounts behind the bot are visible.
 
 ![The pipeline in numbers](/assets/img/doormat/01_funnel.png)
